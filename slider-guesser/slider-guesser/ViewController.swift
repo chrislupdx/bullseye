@@ -15,9 +15,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func showAlert() {
-        print("heyyo")
-        
+        let alert = UIAlertController(title: "alerttitle", message: "Alert body text", preferredStyle: .alert)
+        let action = UIAlertAction(title: "buttontext!?", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
-
+    @IBAction func punchLine(){
+        let alert = UIAlertController(title: "Who's there", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "okidokes", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 }
 
