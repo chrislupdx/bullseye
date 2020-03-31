@@ -20,11 +20,5 @@ class ViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
-    @IBAction func punchLine(){
-        let alert = UIAlertController(title: "Who's there", message: nil, preferredStyle: .alert)
-        let action = UIAlertAction(title: "okidokes", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
-    }
 }
 
